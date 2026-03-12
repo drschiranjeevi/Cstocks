@@ -22,7 +22,7 @@ jobs:
 
       - name: Install Buildozer and Cython
         run: |
-          pip install buildozer cython virtualenv
+          pip install buildozer cython==0.29.33 virtualenv setuptools wheel
           sudo apt-get update
           sudo apt-get install -y build-essential libffi-dev libssl-dev libltdl-dev
           sudo apt-get install -y zip unzip git openjdk-17-jdk autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake
